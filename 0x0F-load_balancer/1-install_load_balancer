@@ -9,8 +9,8 @@ printf "\nfrontend hbtn-lb\n
 \tdefault_backend servers\n\n
 backend servers\n\
 \tbalance roundrobin\n
-\tserver web-01 100.24.74.72\n
-\tserver web-02 54.146.86.214\n" >> /etc/haproxy/haproxy.cfg
+\tserver [STUDENT_ID]-web-01 100.24.74.72\n
+\tserver [STUDENT_ID]-web-02 54.146.86.214\n" >> /etc/haproxy/haproxy.cfg
 sudo service haproxy start
 
 
