@@ -36,8 +36,8 @@ defaults
 #--leonidasphay.tech-params-begin--
 backend leonidasphay.tech-backend
         balance roundrobin
-        server 6717-web-01 3.238.181.140:80 check
-        server 6717-web-02 3.236.65.72:80 check
+        server 6717-web-01 100.24.74.72 check
+        server 6717-web-02 54.146.86.214 check
 frontend leonidasphay.tech-frontend
         bind *:80
         bind *:443 ssl crt /etc/letsencrypt/live/www.leonidasphay.tech-0002/fullchain.pem
